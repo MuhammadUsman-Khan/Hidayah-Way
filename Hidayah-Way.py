@@ -150,8 +150,10 @@ def main():
     st.markdown(
         """
         <style>
+        @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');        
         h3, pre {
-            line-height: 1.5 !important;  /* adjust spacing between lines */
+            font-family: 'Scheherazade New', serif !important;
+            line-height: 2.2 !important;  
         }
         </style>
 
@@ -177,6 +179,7 @@ def main():
 
 if __name__ == main():
     main()
+
 
 
 
