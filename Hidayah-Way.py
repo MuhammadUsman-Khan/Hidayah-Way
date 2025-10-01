@@ -154,7 +154,7 @@ def main():
     @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
 
-    .quran-text {
+    h3, pre {
         font-family: 'Amiri Quran', 'Scheherazade New', 'Noto Naskh Arabic', serif !important;
         font-size: 22px;
         line-height: 2.2;
@@ -181,6 +181,7 @@ def main():
 
 if __name__ == main():
     main()
+
 
 
 
