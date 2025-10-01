@@ -28,7 +28,7 @@ def quran():
             st.markdown("---")
             ayahs = arabic["ayahs"]
             for ayah in ayahs:
-                st.markdown("#### " + ayah["text"])
+                st.subheader(ayah["text"])
                 st.caption(ayah["numberInSurah"])
 
     with tab_translation:
@@ -148,20 +148,21 @@ def main():
     st.set_page_config(page_title="Hidayah-Way", layout='centered')
 
     st.markdown(
-        """
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');        
-        h3, pre {
-            font-family: 'Scheherazade New', serif !important;
-            line-height: 2.2 !important;  
-        }
-        </style>
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
 
-
-        """,
-        unsafe_allow_html=True
+    h3, pre {
+        font-family: 'Scheherazade New', 'Amiri Quran', 'Noto Naskh Arabic', serif !important;
+        line-height: 2.2 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
     )
-
+    
     st.title("Hidayah-Way")
     st.subheader("Your path to Quran, Sunnah & Salah times.")
 
@@ -179,6 +180,7 @@ def main():
 
 if __name__ == main():
     main()
+
 
 
 
