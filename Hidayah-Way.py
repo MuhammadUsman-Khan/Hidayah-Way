@@ -61,8 +61,9 @@ def quran():
         st.caption(translation["numberOfAyahs"])
         st.markdown("---")
         translations = translation["ayahs"]
-        for ayah, translation_linewise in zip(ayahs, translations):              
-            st.subheader(ayah["text"])
+        for ayah, translation_linewise in zip(ayahs, translations):   
+            ayah_text = ayah['text'].replace('\u0670', "<span style='font-family: serif'>&#x0670;</span>")
+            st.markdown(f"<h3>{ayah_text}</h3>", unsafe_allow_html=True)
             st.caption(translation_linewise["text"])
             st.caption(translation_linewise["numberInSurah"])
         
@@ -179,6 +180,7 @@ def main():
 
 if __name__ == main():
     main()
+
 
 
 
