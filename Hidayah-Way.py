@@ -28,7 +28,7 @@ def quran():
             st.markdown("---")
             ayahs = arabic["ayahs"]
             for ayah in ayahs:
-                st.subheader(ayah["text"])
+                st.markdown("#### " + ayah["text"])
                 st.caption(ayah["numberInSurah"])
 
     with tab_translation:
@@ -179,6 +179,7 @@ def main():
 
 if __name__ == main():
     main()
+
 
 
 
