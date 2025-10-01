@@ -150,14 +150,11 @@ def main():
     st.markdown(
     """
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
-
+    
     h3, pre {
-        font-family: 'Amiri Quran', 'Scheherazade New', 'Noto Naskh Arabic', serif !important;
-        font-size: 22px;
-        line-height: 2.2;
+        font-family: 'Scheherazade New', serif !important;
+        line-height: 2.2 !important;
     }
     </style>
     """,
@@ -181,6 +178,7 @@ def main():
 
 if __name__ == main():
     main()
+
 
 
 
