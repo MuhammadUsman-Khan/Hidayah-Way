@@ -29,7 +29,7 @@ def quran():
             ayahs = arabic["ayahs"]
             for ayah in ayahs:
                 ayah_text = ayah['text'].replace('\u0670', "<span style='font-family: serif'>&#x0670;</span>")
-                st.markdown(f"<h3>{ayah_text}</h3>")
+                st.markdown(f"<h3>{ayah_text}</h3>", unsafe_allow_html=True)
                 st.caption(ayah["numberInSurah"])
 
     with tab_translation:
@@ -179,6 +179,7 @@ def main():
 
 if __name__ == main():
     main()
+
 
 
 
